@@ -4,13 +4,11 @@ import Result from './components/Result';
 
 function App() {
   return (
-    <div id='root'>
-      <body>
-        <Header />
-        <UserInput />
-        <Result />
-      </body>
-    </div>
+    <>
+      <Header />
+      <UserInput />
+      <Result />
+    </>
   )
 }
 
