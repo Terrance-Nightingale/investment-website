@@ -21,6 +21,8 @@ function App() {
     });
   }
 
+  const isValid = (investmentData.duration >= 1);
+
   return (
     <>
       <Header />
@@ -28,9 +30,7 @@ function App() {
       inputHandler={handleInputChange}
       investmentData={investmentData}
       />
-      <Result
-      investmentData={investmentData}
-      />
+      {isValid && <Result investmentData={investmentData}/>}
     </>
   );
 }
